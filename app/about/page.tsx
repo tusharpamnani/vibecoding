@@ -1,13 +1,8 @@
 import { Lightbulb, Award, Users, BookOpen } from 'lucide-react';
-import { FloatingOrb } from '@/components/home/feature-section'; // Assuming FloatingOrb is exported and path is correct
 
 export default function AboutPage() {
   return (
     <div className="relative overflow-hidden py-12 px-4">
-      {/* Floating Orbs for background decoration */}
-      <FloatingOrb className="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-br from-purple-600/40 via-cyan-500/40 to-emerald-500/40 blur-3xl opacity-50 animate-pulse-slow" />
-      <FloatingOrb className="absolute -bottom-20 -right-20 w-80 h-80 bg-gradient-to-tl from-emerald-500/40 via-cyan-500/40 to-purple-600/40 blur-3xl opacity-50 animate-pulse-slow animation-delay-2000" />
-      
       <div className="container mx-auto relative z-10">
       <div className="text-center max-w-3xl mx-auto pt-8 pb-12">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-cyan-500 to-emerald-500 animate-glow" style={{ backgroundSize: '200% 200%' }}>

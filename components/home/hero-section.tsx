@@ -144,11 +144,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   }, []);
 
   return (
-    <div className={`relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 ${className}`}>
-      <AnimatedGradient />
-      <FloatingIcons />
-      
-      {/* Grid pattern overlay */}
+    <div className={`relative min-h-screen flex items-center justify-center ${className}`}>
+      {/* Grid pattern overlay - kept for additional texture */}
       <div className="absolute inset-0 opacity-10">
         <div 
           className="absolute inset-0" 
@@ -270,55 +267,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
         </div>
       )}
-
-      {/* Custom CSS for animations */}
-      <style jsx>{`
-        @keyframes gradient-x {
-          0%, 100% {
-            background-size: 200% 200%;
-            background-position: left center;
-          }
-          50% {
-            background-size: 200% 200%;
-            background-position: right center;
-          }
-        }
-        
-        @keyframes float {
-          0%, 100% { transform: translateY(0px) rotate(0deg); }
-          33% { transform: translateY(-20px) rotate(120deg); }
-          66% { transform: translateY(-10px) rotate(240deg); }
-        }
-        
-        @keyframes float-slow {
-          0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.2; }
-          50% { transform: translateY(-30px) rotate(180deg); opacity: 0.5; }
-        }
-        
-        .animate-gradient-x {
-          animation: gradient-x 8s ease infinite;
-        }
-        
-        .animate-float {
-          animation: float 20s ease-in-out infinite;
-        }
-        
-        .animate-float-slow {
-          animation: float-slow 25s ease-in-out infinite;
-        }
-        
-        .animation-delay-1000 {
-          animation-delay: 1s;
-        }
-        
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-        
-        .animation-delay-4000 {
-          animation-delay: 4s;
-        }
-      `}</style>
     </div>
   );
 };

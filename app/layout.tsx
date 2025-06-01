@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme/theme-provider';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
+import { AnimatedBackground } from '@/components/ui/animated-background';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,11 +28,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col min-h-screen">
-            <Navbar />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </div>
+          <AnimatedBackground>
+            <div className="flex flex-col min-h-screen">
+              <Navbar />
+              <main className="flex-grow">{children}</main>
+              <Footer />
+            </div>
+          </AnimatedBackground>
           <Toaster />
         </ThemeProvider>
       </body>

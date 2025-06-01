@@ -9,7 +9,7 @@ export default function Home() {
       <FeatureSection />
       <TestimonialSection />
       
-      <section className="py-24 bg-background">
+      <section className="py-24">
         <div className="container px-4 mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to transform your research?</h2>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">

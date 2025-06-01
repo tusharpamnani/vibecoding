@@ -54,15 +54,7 @@ export function TestimonialSection() {
   }, []);
 
   return (
-    <section id="testimonial-section" className="py-24 relative overflow-hidden bg-background">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <FloatingOrb delay={0} size="w-64 h-64" position="-top-20 -left-20" color="bg-purple-400" />
-        <FloatingOrb delay={2} size="w-72 h-72" position="top-40 -right-20" color="bg-cyan-400" />
-        <FloatingOrb delay={4} size="w-80 h-80" position="bottom-10 left-40" color="bg-emerald-400" />
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-3xl" />
-      </div>
-
+    <section id="testimonial-section" className="py-24 relative overflow-hidden">
       <div className="container px-4 mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-cyan-600">
